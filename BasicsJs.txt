@@ -1,0 +1,166 @@
+let num=1; or var num=1; - variable
+const num1=5; - constant variable
+let usernamme = "shivesh"; - intializing string
+username[0] - indexing
+output-s
+username.length-length of vriable
+username.toUpperCase()- convert to uppercase
+username.trim()-remove whitespaces from left and right of the string
+you can chain methods together
+username.indexof('h'); - getting index of a variable
+username.slice(0,2); - gives first two characters
+username.replace("shivesh","safal") - replacig
+"lol".repeat(10) - repeating
+`username is ${username}` - line of text with variable
+===,!==(strictly equal i.e, value and datatype)
+console.log()- printing stuff in file
+alert("hello")
+int userinput= prompt("Please enter a number")
+parseInt(variable)-to get int values 
+if(age>18)
+{
+console.log("Adult");
+}
+if(password.indexof(" ")==-1)
+{
+console.log("no spaces")
+}
+
+let student=[];
+let colors=["red","green"]
+colors [0] = red
+colors.length
+push,pop-from end
+shift,unshift-from start
+colors.pop() - gives last element as output anad remove it from array
+shift - remove from start
+unshift - add to start
+let colors=colors.concat(arrayName)
+colors.indexof('green')-location
+colors.includes('green')-boolean
+colors.slice(start,end)-extracting values
+colors.splice(statringIndex,howManyElementsAfterIt)
+colors.sort()
+
+JS objects literals
+stored in key value pairs
+const fitbitdata{
+totalsteps:500,
+totalmiles:1000
+};
+accessing 
+fitbitdata["totalsteps"]
+fitbitdata.totalsteps
+
+loops 
+for(let i=1;i<10;i++)
+{
+	console.log(i);
+}
+while()
+{}
+for(let sub of subreddits){
+	console.log(subs)
+}
+looping through objec literals
+for(let num in numbers)
+{
+	console.log('$[num],$[objectLiteralName[num]]')
+}
+
+Functions
+
+function text(person){
+ console.log('Hi ${person}');
+}
+
+
+text('ned')- function calling
+
+output- Hi ned
+
+level up functions
+
+function expressions syntax 
+
+const add = function(x,y)
+{
+	return x+y;
+}
+add(4,5)
+9
+
+function calling and returning function 
+
+function calltwice(func)
+{
+	func();
+	func();
+}
+
+
+calltwice(func);
+
+function func()
+{
+	console.log('hiiiiiii')
+}
+
+return function(){ conmsole.log('i am here.')}
+
+methods 
+
+cont myname={
+	pi:3.14,
+	printpi :function(){console.log(this.pi)}
+	square:function(num){return num*num;}
+}
+myname.square(5)
+25
+
+arrays and callbacks
+
+const num =[1,2,3,4,5]
+num.forEach(function (el){console.log(el)})- print all elements
+const text={'shivesh','ashish'}
+const caaps = text.map(function (t){return t.toUpperCaase()})- Returns new array
+   
+arrow function 
+const square =(x)=>{return x*x;}
+const square =()=>(0)
+
+settimeout and time interval
+settimeout(console.log("hello"),3000)- wait for 10 sec and then allow the output
+setInterval(1,1000)
+
+filter method
+const smallnum = num.filter(n=>{return n==5})
+
+some and very boolean function 
+nums.every(score =>{score>=2}) - for evry element
+nums.some(score =>{score>=2})- will return tyreue if even one value in true
+
+reduce
+[3,5,7,9].reduce((accumulator,currentvalue)=>{return accumulator +current value;})
+
+
+default params
+ 
+function multiply(a=0,b=0)
+{
+return a*b;
+}
+multiply(1,2)
+2
+multiply()
+0
+
+Spread 
+
+const numbers =[1,2,3,4,5]
+math.max(...numbers)
+const all pets=[..numbers,...words]
+
+
+
+
